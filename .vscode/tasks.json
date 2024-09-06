@@ -2,22 +2,22 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build C++ files",
+      "label": "build lab1",
       "type": "shell",
       "command": "g++",
       "args": [
         "-g",
-        "${workspaceFolder}/lab1.cpp",
-        "${workspaceFolder}/debug.cpp",
+        "${workspaceFolder}/lab1/lab1.cpp",
+        "${workspaceFolder}/lab1/debug.cpp",
         "-o",
-        "${workspaceFolder}/lab1.exe"
+        "${workspaceFolder}/lab1/debug.exe"
       ],
       "group": {
         "kind": "build",
         "isDefault": true
       },
       "problemMatcher": ["$gcc"],
-      "detail": "Compiling lab1.cpp and debug.cpp"
+      "detail": "Compiling C++ code for lab1"
     }
   ]
 }
