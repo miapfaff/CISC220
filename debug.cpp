@@ -490,11 +490,6 @@ void func13(string s,int len,int msize) {
         }
     }
 
-    for (int i = 0; i < msize; ++i) {
-        cout << matrix[i][msize - 1 - i]; // Access reverse diagonal elements
-    }
-    cout << endl;
-
     for (int j = 0; j < msize; ++j) { // Column iteration
         for (int i = 0; i < msize; ++i) { // Row iteration within each column
             cout << matrix[i][j];
