@@ -26,7 +26,7 @@ using namespace std;
 line below)
 /*****************************************************/
 void func1(string s, int num) {
-    for (int i = 0; i <= num; i++) {
+    for (int i = 0; i < num; i++) {
         cout << s;
     }
     cout << endl;
@@ -45,7 +45,7 @@ func2: (2 pts)
 */
 void func2(string s, int len) {
     int i = 1;
-    while (i < len){
+    while (i < len-1){
         cout << s[i];
         i += 2;
     }
@@ -65,11 +65,14 @@ func3: (2 pts)
 */
 
 void func3(string s, int len) {
-    for(int i = len; i < 1; i -= 2) {
-        cout << s;
+    for(int i = len - 1; i >= 0; i--) {
+        if( i % 2 == (len - 1) % 2) {
+            cout << s[i];
+        }
     }
     cout << endl;
 }
+
 /*****************************************************
 func4: (2 pts)
 * write a function that takes as input:
