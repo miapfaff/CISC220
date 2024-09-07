@@ -7,17 +7,17 @@
       "command": "g++",
       "args": [
         "-g",
-        "${workspaceFolder}/lab1.cpp",
+        "${workspaceFolder}/Lab1.cpp",
         "${workspaceFolder}/debug.cpp",
         "-o",
-        "${workspaceFolder}/lab1.exe"
+        "${workspaceFolder}/Lab1.exe"
       ],
       "group": {
         "kind": "build",
         "isDefault": true
       },
       "problemMatcher": ["$gcc"],
-      "detail": "Compiling lab1.cpp and debug.cpp"
+      "detail": "Compiling Lab1.cpp and debug.cpp"
     }
   ]
 }
